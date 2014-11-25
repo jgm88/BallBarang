@@ -18,33 +18,55 @@ public class BallMovement : MonoBehaviour {
 	/// Númreo de superficies tipo "suelo" que estamos tocando.
 	/// </summary>
 	private int contactosConElSuelo = 0;
+	/// <summary>
+	/// Transform de la camara.
+	/// </summary>
+	private Transform anclaCamara;
+	/// <summary>
+	/// Direccion relativa a la camara. 
+	/// </summary>
+	private Vector3 realDirection;
+	/// <summary>
+	/// Factor del Power-Up de velocidad
+	/// </summary>
+	public int speedPowerUpFactor;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+	{
+
+		//Empezamos en el aire
 		isGrounded = false;
+		//Obtenemos la camara
+		anclaCamara = GameObject.Find ("Anchor").transform;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown(KeyCode.Space) && isGrounded)  
-			rigidbody.AddForce (0, jumpForce, 0);
-				
 
-		if (Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0) {
-			Debug.Log ("Moviendo");
-			rigidbody.AddForce (Input.GetAxis ("Horizontal") * acceleration, 0, Input.GetAxis ("Vertical") * acceleration);
-		}
+		if (Input.GetKeyDown (KeyCode.Space) && isGrounded)  
+				rigidbody.AddForce (0, jumpForce, 0);
 
+		if (Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0) 
+		{
+			realDirection = anclaCamara.TransformDirection (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
+			rigidbody.AddForce(realDirection *acceleration);
+		}				
 	}
 
 	void OnCollisionEnter(Collision colision)
 	{
-		if (colision.gameObject.tag == "Suelo") 
+		if (colision.gameObject.tag == "Suelo" || colision.gameObject.tag == "Speed") 
 		{
 			contactosConElSuelo++;
 
+		}
+
+		if (colision.gameObject.tag == "Speed") 
+		{
+			rigidbody.velocity*=speedPowerUpFactor;
 		}
 
 		if(contactosConElSuelo > 0)
