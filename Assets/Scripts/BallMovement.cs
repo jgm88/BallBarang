@@ -72,7 +72,7 @@ public class BallMovement : MonoBehaviour {
 		if(contactosConElSuelo > 0)
 		{
 			isGrounded = true;
-			Debug.Log("En el suelo");
+
 
 		}
 	
@@ -89,7 +89,7 @@ public class BallMovement : MonoBehaviour {
 		if(contactosConElSuelo == 0)
 		{
 			isGrounded = false;
-			Debug.Log ("En el aire");
+
 		}
 	
 	}
