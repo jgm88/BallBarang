@@ -13,7 +13,7 @@ public class BallMovement : MonoBehaviour {
 	/// <summary>
 	/// Estamos en el suelo o en el aire.
 	/// </summary>
-	private bool isGrounded;
+	public bool isGrounded;
 	/// <summary>
 	/// Númreo de superficies tipo "suelo" que estamos tocando.
 	/// </summary>
@@ -47,7 +47,7 @@ public class BallMovement : MonoBehaviour {
 
 
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded)  
-				rigidbody.AddForce (0, jumpForce, 0);
+			rigidbody.AddForce (0, jumpForce, 0);
 
 		if (Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0) 
 		{
@@ -58,7 +58,7 @@ public class BallMovement : MonoBehaviour {
 
 	void OnCollisionEnter(Collision colision)
 	{
-		if (colision.gameObject.tag == "Suelo" || colision.gameObject.tag == "Speed") 
+		if (colision.gameObject.tag == "Ground" || colision.gameObject.tag == "Speed") 
 		{
 			contactosConElSuelo++;
 
@@ -80,7 +80,7 @@ public class BallMovement : MonoBehaviour {
 
 	void OnCollisionExit(Collision colision)
 	{
-		if (colision.gameObject.tag == "Suelo") 
+		if (colision.gameObject.tag == "Ground") 
 		{
 			contactosConElSuelo--;
 			
