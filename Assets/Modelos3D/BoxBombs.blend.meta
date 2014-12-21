@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: b37774179e2b5a040b8a6d9f2bc4ce6d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: tablon
+    100004: tablon_001
+    100006: tablon_002
+    100008: tablon_003
+    100010: tablon_004
+    100012: tablon_005
+    100014: tablon_006
+    100016: tablon_007
+    100018: tablon_008
+    100020: tablon_009
+    100022: tablon_010
+    100024: tablon_011
+    100026: tablon_012
+    100028: tablon_013
+    100030: tablon_014
+    100032: tablon_015
+    100034: tablon_016
+    400000: //RootNode
+    400002: tablon
+    400004: tablon_001
+    400006: tablon_002
+    400008: tablon_003
+    400010: tablon_004
+    400012: tablon_005
+    400014: tablon_006
+    400016: tablon_007
+    400018: tablon_008
+    400020: tablon_009
+    400022: tablon_010
+    400024: tablon_011
+    400026: tablon_012
+    400028: tablon_013
+    400030: tablon_014
+    400032: tablon_015
+    400034: tablon_016
+    2300000: tablon
+    2300002: tablon_001
+    2300004: tablon_002
+    2300006: tablon_003
+    2300008: tablon_004
+    2300010: tablon_005
+    2300012: tablon_006
+    2300014: tablon_007
+    2300016: tablon_008
+    2300018: tablon_009
+    2300020: tablon_010
+    2300022: tablon_011
+    2300024: tablon_012
+    2300026: tablon_013
+    2300028: tablon_014
+    2300030: tablon_015
+    2300032: tablon_016
+    3300000: tablon
+    3300002: tablon_001
+    3300004: tablon_002
+    3300006: tablon_003
+    3300008: tablon_004
+    3300010: tablon_005
+    3300012: tablon_006
+    3300014: tablon_007
+    3300016: tablon_008
+    3300018: tablon_009
+    3300020: tablon_010
+    3300022: tablon_011
+    3300024: tablon_012
+    3300026: tablon_013
+    3300028: tablon_014
+    3300030: tablon_015
+    3300032: tablon_016
+    4300000: tablon_014
+    4300002: tablon_013
+    4300004: tablon_012
+    4300006: tablon_011
+    4300008: tablon_010
+    4300010: tablon_009
+    4300012: tablon_008
+    4300014: tablon_007
+    4300016: tablon_006
+    4300018: tablon_005
+    4300020: tablon_004
+    4300022: tablon_003
+    4300024: tablon_002
+    4300026: tablon_001
+    4300028: tablon_015
+    4300030: tablon_016
+    4300032: tablon
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
