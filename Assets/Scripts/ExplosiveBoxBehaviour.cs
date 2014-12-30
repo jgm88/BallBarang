@@ -9,6 +9,7 @@ public class ExplosiveBoxBehaviour : MonoBehaviour {
 	public GameObject [] sparksAnims;
 	public GameObject [] bombs;
 	public GameObject explosionEffect;
+	private Collider[] physicsObjects;
 
 	// Use this for initialization
 	void Start () {
@@ -26,16 +27,23 @@ public class ExplosiveBoxBehaviour : MonoBehaviour {
 
 	IEnumerator explosion(float time)
 	{
+		Vector3 myPos= this.gameObject.transform.position;
 		StartCoroutine ("turnSparks");
 		yield return new WaitForSeconds(2f);
 		explosionEffect.particleSystem.Play ();
 		foreach(Rigidbody rigid in childRigids)
 		{
-			rigid.constraints= RigidbodyConstraints.None;
+			rigid.isKinematic= false;
 		}
 		foreach(Rigidbody rigid in childRigids)
 		{
-			rigid.AddExplosionForce(700f,this.transform.position,10f,6.0f);
+			rigid.AddExplosionForce(700f,this.transform.position,30f,6f);
+		}
+		physicsObjects = Physics.OverlapSphere (myPos, 30f);
+		foreach (Collider col in physicsObjects) {
+			if(col && col.rigidbody && !col.tag.Equals("Player")){
+				col.rigidbody.AddExplosionForce(950f,myPos,30f,0.001f);
+			}
 		}
 		Destroy (this.gameObject, 3.5f);
 

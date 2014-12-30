@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 5a16a70e473010e4fb0c66b1611ad8f0
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Cube
+    100002: Cube_001
+    100004: Cube_003
+    100006: Cylinder_001
+    100008: Cylinder_002
+    100010: Torus
+    100012: Torus_001
+    100014: Torus_002
+    100016: Torus_003
+    100018: //RootNode
+    100020: enganche
+    100022: enganche_001
+    100024: rueda
+    100026: rueda_001
+    100028: rueda_002
+    100030: rueda_003
+    100032: tabla
+    100034: varilla
+    100036: varilla_001
+    400000: Cube
+    400002: Cube_001
+    400004: Cube_003
+    400006: Cylinder_001
+    400008: Cylinder_002
+    400010: Torus
+    400012: Torus_001
+    400014: Torus_002
+    400016: Torus_003
+    400018: //RootNode
+    400020: enganche
+    400022: enganche_001
+    400024: rueda
+    400026: rueda_001
+    400028: rueda_002
+    400030: rueda_003
+    400032: tabla
+    400034: varilla
+    400036: varilla_001
+    2300000: Cube
+    2300002: Cube_001
+    2300004: Cube_003
+    2300006: Cylinder_001
+    2300008: Cylinder_002
+    2300010: Torus
+    2300012: Torus_001
+    2300014: Torus_002
+    2300016: Torus_003
+    2300018: enganche
+    2300020: enganche_001
+    2300022: rueda
+    2300024: rueda_001
+    2300026: rueda_002
+    2300028: rueda_003
+    2300030: tabla
+    2300032: varilla
+    2300034: varilla_001
+    3300000: Cube
+    3300002: Cube_001
+    3300004: Cube_003
+    3300006: Cylinder_001
+    3300008: Cylinder_002
+    3300010: Torus
+    3300012: Torus_001
+    3300014: Torus_002
+    3300016: Torus_003
+    3300018: enganche
+    3300020: enganche_001
+    3300022: rueda
+    3300024: rueda_001
+    3300026: rueda_002
+    3300028: rueda_003
+    3300030: tabla
+    3300032: varilla
+    3300034: varilla_001
+    4300000: Cube_003
+    4300002: Cube_001
+    4300004: Torus_003
+    4300006: Torus_002
+    4300008: Torus_001
+    4300010: Torus
+    4300012: Cylinder_002
+    4300014: Cylinder_001
+    4300016: Cube
+    4300018: enganche_001
+    4300020: enganche
+    4300022: rueda
+    4300024: rueda_003
+    4300026: rueda_002
+    4300028: rueda_001
+    4300030: varilla_001
+    4300032: varilla
+    4300034: tabla
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
