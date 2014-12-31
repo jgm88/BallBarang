@@ -5,7 +5,6 @@ public class ExplosiveBoxBehaviour : MonoBehaviour {
 
 
 	private Component [] childRigids;
-
 	public GameObject [] sparksAnims;
 	public GameObject [] bombs;
 	public GameObject explosionEffect;
@@ -19,21 +18,21 @@ public class ExplosiveBoxBehaviour : MonoBehaviour {
 	public void OnTriggerEnter(Collider col)
 	{
 		if (col.tag.Equals ("Actuator")) {
-			StartCoroutine("explosion",2f);
+			StartCoroutine("explosionCor",2f);
 			Destroy (col.gameObject, 2f);
 		}
 	}
 
 
-	IEnumerator explosion(float time)
+	IEnumerator explosionCor(float time)
 	{
 		Vector3 myPos= this.gameObject.transform.position;
-		StartCoroutine ("turnSparks");
+		StartCoroutine (turnSparksCor());
 		yield return new WaitForSeconds(2f);
 		explosionEffect.particleSystem.Play ();
 		foreach(Rigidbody rigid in childRigids)
 		{
-			rigid.isKinematic= false;
+			rigid.isKinematic = false;
 		}
 		foreach(Rigidbody rigid in childRigids)
 		{
@@ -41,15 +40,16 @@ public class ExplosiveBoxBehaviour : MonoBehaviour {
 		}
 		physicsObjects = Physics.OverlapSphere (myPos, 30f);
 		foreach (Collider col in physicsObjects) {
-			if(col && col.rigidbody && !col.tag.Equals("Player")){
-				col.rigidbody.AddExplosionForce(950f,myPos,30f,0.001f);
+			if(col && col.rigidbody && col.tag.Equals("ExplosionAffect")){
+				col.rigidbody.isKinematic = false;
+				col.rigidbody.AddExplosionForce(800f,myPos,30f,0.001f);
 			}
 		}
 		Destroy (this.gameObject, 3.5f);
 
 	}
 
-	IEnumerator turnSparks()
+	IEnumerator turnSparksCor()
 	{
 		sparksAnims [0].particleSystem.Play ();
 		sparksAnims [1].particleSystem.Play ();

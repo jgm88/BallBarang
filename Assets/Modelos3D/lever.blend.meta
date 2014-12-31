@@ -1,62 +1,48 @@
 fileFormatVersion: 2
-guid: 1e89623be29588f4590a343ea49b2d9e
+guid: 440f42b2f95c7ea48b9d2d104d5cd211
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: Cube
     100002: Cube_001
-    100004: Cube_003
-    100006: Cube_004
-    100008: Cube_005
-    100010: //RootNode
-    100012: tablon
-    100014: tablon_001
-    100016: tablon_002
-    100018: via
-    100020: via_001
+    100004: Cube_002
+    100006: //RootNode
+    100008: Sphere
+    100010: mango
+    100012: pie
+    100014: pomo
     400000: Cube
     400002: Cube_001
-    400004: Cube_003
-    400006: Cube_004
-    400008: Cube_005
-    400010: //RootNode
-    400012: tablon
-    400014: tablon_001
-    400016: tablon_002
-    400018: via
-    400020: via_001
+    400004: Cube_002
+    400006: //RootNode
+    400008: Sphere
+    400010: mango
+    400012: pie
+    400014: pomo
     2300000: Cube
     2300002: Cube_001
-    2300004: Cube_003
-    2300006: Cube_004
-    2300008: Cube_005
-    2300010: tablon
-    2300012: tablon_001
-    2300014: tablon_002
-    2300016: via
-    2300018: via_001
+    2300004: Cube_002
+    2300006: Sphere
+    2300008: mango
+    2300010: pie
+    2300012: pomo
     3300000: Cube
     3300002: Cube_001
-    3300004: Cube_003
-    3300006: Cube_004
-    3300008: Cube_005
-    3300010: tablon
-    3300012: tablon_001
-    3300014: tablon_002
-    3300016: via
-    3300018: via_001
-    4300000: Cube_004
+    3300004: Cube_002
+    3300006: Sphere
+    3300008: mango
+    3300010: pie
+    3300012: pomo
+    4300000: Cube_002
     4300002: Cube_001
-    4300004: Cube_005
-    4300006: Cube_003
-    4300008: Cube
-    4300010: tablon_002
-    4300012: tablon
-    4300014: via_001
-    4300016: tablon_001
-    4300018: via
-    7400000: Default Take
+    4300004: Sphere
+    4300006: Cube
+    4300008: mango
+    4300010: pie
+    4300012: pomo
+    7400000: MoveLever
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -72,7 +58,41 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: MoveLever
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mango
+        weight: 1
+      - path: pie
+        weight: 1
+      - path: pomo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -108,6 +128,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
