@@ -4,10 +4,20 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: AdornoUp
+    100004: Muro
     400000: //RootNode
+    400002: AdornoUp
+    400004: Muro
     2300000: //RootNode
+    2300002: AdornoUp
+    2300004: Muro
     3300000: //RootNode
+    3300002: AdornoUp
+    3300004: Muro
     4300000: Torus
+    4300002: AdornoUp
+    4300004: Muro
     7400000: Default Take
     9500000: //RootNode
   materials:
