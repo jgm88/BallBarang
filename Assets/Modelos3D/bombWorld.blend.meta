@@ -7,21 +7,46 @@ ModelImporter:
     100002: Plane
     100004: Plane_001
     100006: Cube
+    100008: Torus
+    100010: Cylinder
+    100012: entrada
+    100014: mina
+    100016: padrera
     400000: //RootNode
     400002: Plane
     400004: Plane_001
     400006: Cube
+    400008: Torus
+    400010: Cylinder
+    400012: entrada
+    400014: mina
+    400016: padrera
     2300000: //RootNode
     2300002: Plane
     2300004: Plane_001
     2300006: Cube
+    2300008: Torus
+    2300010: Cylinder
+    2300012: entrada
+    2300014: mina
+    2300016: padrera
     3300000: //RootNode
     3300002: Plane
     3300004: Plane_001
     3300006: Cube
+    3300008: Torus
+    3300010: Cylinder
+    3300012: entrada
+    3300014: mina
+    3300016: padrera
     4300000: Plane
     4300002: Plane_001
     4300004: Cube
+    4300006: Torus
+    4300008: entrada
+    4300010: Cylinder
+    4300012: mina
+    4300014: padrera
     7400000: Default Take
     9500000: //RootNode
   materials:
