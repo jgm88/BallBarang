@@ -1,23 +1,65 @@
 fileFormatVersion: 2
-guid: fc898c7f2be935a4799eea0f310808e9
+guid: ec907bf1bc283784b8a7523f5439af12
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: AdornoUp
-    100004: Muro
-    400000: //RootNode
-    400002: AdornoUp
-    400004: Muro
-    2300000: //RootNode
-    2300002: AdornoUp
-    2300004: Muro
-    3300000: //RootNode
-    3300002: AdornoUp
-    3300004: Muro
-    4300000: Torus
-    4300002: AdornoUp
-    4300004: Muro
+    100000: CejaDer
+    100002: CejaIzq
+    100004: Cuerpo
+    100006: Dientes
+    100008: //RootNode
+    100010: Labios
+    100012: Nariz
+    100014: OjeraDer
+    100016: OjeraIzq
+    100018: OjoDer
+    100020: OjoIzq
+    100022: Perilla
+    400000: CejaDer
+    400002: CejaIzq
+    400004: Cuerpo
+    400006: Dientes
+    400008: //RootNode
+    400010: Labios
+    400012: Nariz
+    400014: OjeraDer
+    400016: OjeraIzq
+    400018: OjoDer
+    400020: OjoIzq
+    400022: Perilla
+    2300000: CejaDer
+    2300002: CejaIzq
+    2300004: Cuerpo
+    2300006: Dientes
+    2300008: Labios
+    2300010: Nariz
+    2300012: OjeraDer
+    2300014: OjeraIzq
+    2300016: OjoDer
+    2300018: OjoIzq
+    2300020: Perilla
+    3300000: CejaDer
+    3300002: CejaIzq
+    3300004: Cuerpo
+    3300006: Dientes
+    3300008: Labios
+    3300010: Nariz
+    3300012: OjeraDer
+    3300014: OjeraIzq
+    3300016: OjoDer
+    3300018: OjoIzq
+    3300020: Perilla
+    4300000: Dientes
+    4300002: Perilla
+    4300004: Labios
+    4300006: Nariz
+    4300008: OjeraDer
+    4300010: OjeraIzq
+    4300012: CejaIzq
+    4300014: CejaDer
+    4300016: OjoIzq
+    4300018: OjoDer
+    4300020: Cuerpo
     7400000: Default Take
     9500000: //RootNode
   materials:

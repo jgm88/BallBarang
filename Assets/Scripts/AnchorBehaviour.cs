@@ -42,7 +42,7 @@ public class AnchorBehaviour : MonoBehaviour {
 		rotateCamera = false;
 	}
 
-	void Update () {
+	void LateUpdate () {
 		transform.position = player.transform.position;
 
 		if(rotateCamera && !playerMovement.isGrounded){

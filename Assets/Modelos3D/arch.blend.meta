@@ -4,10 +4,104 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Torus
+    100004: Torus_001
+    100006: Torus_002
+    100008: Torus_003
+    100010: Torus_004
+    100012: Torus_005
+    100014: Torus_006
+    100016: Torus_007
+    100018: Torus_008
+    100020: AdornoDown
+    100022: AdornoUp
+    100024: Arco
+    100026: Artezo3
+    100028: Atrezo1
+    100030: Atrezo2
+    100032: Atrezo4
+    100034: Muro
+    100036: MuroUp
+    100038: AdornoUp_001
     400000: //RootNode
+    400002: Torus
+    400004: Torus_001
+    400006: Torus_002
+    400008: Torus_003
+    400010: Torus_004
+    400012: Torus_005
+    400014: Torus_006
+    400016: Torus_007
+    400018: Torus_008
+    400020: AdornoDown
+    400022: AdornoUp
+    400024: Arco
+    400026: Artezo3
+    400028: Atrezo1
+    400030: Atrezo2
+    400032: Atrezo4
+    400034: Muro
+    400036: MuroUp
+    400038: AdornoUp_001
     2300000: //RootNode
+    2300002: Torus
+    2300004: Torus_001
+    2300006: Torus_002
+    2300008: Torus_003
+    2300010: Torus_004
+    2300012: Torus_005
+    2300014: Torus_006
+    2300016: Torus_007
+    2300018: Torus_008
+    2300020: AdornoDown
+    2300022: AdornoUp
+    2300024: Arco
+    2300026: Artezo3
+    2300028: Atrezo1
+    2300030: Atrezo2
+    2300032: Atrezo4
+    2300034: Muro
+    2300036: MuroUp
+    2300038: AdornoUp_001
     3300000: //RootNode
+    3300002: Torus
+    3300004: Torus_001
+    3300006: Torus_002
+    3300008: Torus_003
+    3300010: Torus_004
+    3300012: Torus_005
+    3300014: Torus_006
+    3300016: Torus_007
+    3300018: Torus_008
+    3300020: AdornoDown
+    3300022: AdornoUp
+    3300024: Arco
+    3300026: Artezo3
+    3300028: Atrezo1
+    3300030: Atrezo2
+    3300032: Atrezo4
+    3300034: Muro
+    3300036: MuroUp
+    3300038: AdornoUp_001
     4300000: Torus
+    4300002: Torus_002
+    4300004: Torus_001
+    4300006: Torus_003
+    4300008: Torus_004
+    4300010: Torus_006
+    4300012: Torus_005
+    4300014: Torus_008
+    4300016: Torus_007
+    4300018: Atrezo4
+    4300020: Artezo3
+    4300022: Atrezo1
+    4300024: Atrezo2
+    4300026: MuroUp
+    4300028: Arco
+    4300030: AdornoUp
+    4300032: AdornoDown
+    4300034: Muro
+    4300036: AdornoUp_001
     7400000: Default Take
     9500000: //RootNode
   materials:
