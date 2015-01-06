@@ -5,7 +5,6 @@ public class CoinBehaviour : MonoBehaviour {
 
 	public float rotationSpeed = 1.5f;
 	public GameObject fence;
-	public AudioClip sound;
 
 	private FenceBehaviour fenceBehaviour;
 	private ParticleSystem particles1;
@@ -31,7 +30,7 @@ public class CoinBehaviour : MonoBehaviour {
 			particles1.Play();
 			particles2.Play();
 
-			audio.PlayOneShot(sound);
+			audio.Play();
 
 			fenceBehaviour.tryOpen();
 		}
