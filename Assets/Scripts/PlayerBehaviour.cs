@@ -8,12 +8,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-	
-	}
 	public void deductLife(int damage){
 		life -= damage;
 		if(life <= 0)

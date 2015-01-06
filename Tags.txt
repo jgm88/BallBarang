@@ -2,7 +2,8 @@ TAGS
 
 pos	name
 
-0 - 	Ground
-1 - 	Actuator
+0 - Ground
+1 - Actuator
 2 -	AnchorCamera
 3 -	ExplosionAffect
+4 - Arrow

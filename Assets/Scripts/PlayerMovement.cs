@@ -56,10 +56,15 @@ public class PlayerMovement : MonoBehaviour {
 
 		if(!isClimbing){
 
+<<<<<<< HEAD
 			if (isGrounded && (Input.GetAxis ("Jump") >0.1 || Input.GetKeyDown(KeyCode.Space))) 
 			{
 				rigidbody.AddForce (0, jumpForce, 0);
 			}
+=======
+			if ((Input.GetKeyDown (KeyCode.Space) || Input.GetAxis ("Jump") > 0.1f) && isGrounded)  
+					rigidbody.AddForce (0, jumpForce, 0);
+>>>>>>> develop
 
 			if (Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0){
 				realDirection = anchorCamera.TransformDirection (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
