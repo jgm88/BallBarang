@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b0fa7308d76d0004d9a1221faed6c079
 ModelImporter:
   serializedVersion: 16
@@ -30,6 +31,17 @@ ModelImporter:
     4300004: cajaPowerUp
     4300006: cubo
     4300008: pelota
+=======
+guid: 9627e147796a8da4f896e30ca9e74d3b
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pelotaPlaya
+>>>>>>> cfio
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -67,7 +79,11 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
+<<<<<<< HEAD
     normalImportMode: 0
+=======
+    normalImportMode: 1
+>>>>>>> cfio
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
