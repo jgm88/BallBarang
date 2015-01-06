@@ -4,12 +4,26 @@ ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Armature
+    100004: cabeza
+    100006: pala
+    100008: pies
+    100010: tronco
     400000: //RootNode
+    400002: Armature
+    400004: cabeza
+    400006: pala
+    400008: pies
+    400010: tronco
     2300000: //RootNode
     3300000: //RootNode
     4300000: pala
     7400000: Default Take
+    7400002: ArmatureAction
+    7400004: attack
+    7400006: run
     9500000: //RootNode
+    13700000: pala
   materials:
     importMaterials: 1
     materialName: 0
