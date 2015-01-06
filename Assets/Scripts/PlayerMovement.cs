@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		if(!isClimbing){
 
-			if (Input.GetAxis ("Jump") == 0.1f && isGrounded)  
+			if ((Input.GetKeyDown (KeyCode.Space) || Input.GetAxis ("Jump") > 0.1f) && isGrounded)  
 					rigidbody.AddForce (0, jumpForce, 0);
 
 			if (Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0){
