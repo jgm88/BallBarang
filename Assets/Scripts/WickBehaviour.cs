@@ -9,8 +9,12 @@ public class WickBehaviour : MonoBehaviour {
 	{
 		if (col.tag == "Player")
 		{
+			audio.Play();
 			col.transform.GetComponentInChildren<BombBehaviour>().addTime(upTime);
-			Destroy(this.gameObject);
+			this.gameObject.GetComponentInChildren<MeshRenderer>().enabled=false;
+			this.gameObject.GetComponentInChildren<ParticleSystem>().Stop();
+			this.gameObject.GetComponent<BoxCollider>().enabled= false;
+			Destroy(this.gameObject,2f);
 		}
 	}
 

@@ -14,7 +14,13 @@ public class PowerPickUp : MonoBehaviour {
 		if (col.tag == "Player")
 		{
 			col.transform.GetComponentInChildren<BombBehaviour>().setPower();
-			Destroy(this.gameObject);
+			audio.Play();
+			MeshRenderer[] bombMeshs= this.transform.GetComponentsInChildren<MeshRenderer> ();
+			bombMeshs [0].enabled = false;
+			bombMeshs [1].enabled = false;
+			this.gameObject.GetComponentInChildren<ParticleSystem>().Stop();
+			this.GetComponent<SphereCollider>().enabled= false;
+			Destroy(this.gameObject,2f);
 		}
 
 	}

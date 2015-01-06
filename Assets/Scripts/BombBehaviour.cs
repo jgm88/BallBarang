@@ -17,9 +17,6 @@ public class BombBehaviour : MonoBehaviour {
 	public void addTime(float time)
 	{
 		float tempTime = timeToExplote + time;
-
-		Debug.Log ("Increase Time");
-
 		if (tempTime > timeLife) 
 		{
 			timeToExplote = timeLife;
