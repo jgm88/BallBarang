@@ -10,16 +10,17 @@ public class PlayerBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		vHearts = GameObject.Find("Hearts").GetComponentsInChildren<Transform>();
-
 	}
 
 	public void deductLife(int damage){
-		life -= damage;
-		vHearts[life].gameObject.SetActive(false);
-		audio.Play();
-
-		if(life <= 0)
+		if(life > 0){
+			life -= damage;
+			vHearts[life].gameObject.SetActive(false);
+			audio.Play();
+		}
+		if(life <= 0){
 			die();
+		}
 	}
 
 	private void die(){
