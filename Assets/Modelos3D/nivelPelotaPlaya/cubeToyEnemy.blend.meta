@@ -1,35 +1,13 @@
 fileFormatVersion: 2
-guid: b0fa7308d76d0004d9a1221faed6c079
+guid: 9fb37895ab458e144a6f420767554a92
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: cajaPowerUp
-    100002: cubo
-    100004: pala
-    100006: pelota
-    100008: //RootNode
-    100010: rastrillo
-    400000: cajaPowerUp
-    400002: cubo
-    400004: pala
-    400006: pelota
-    400008: //RootNode
-    400010: rastrillo
-    2300000: cajaPowerUp
-    2300002: cubo
-    2300004: pala
-    2300006: pelota
-    2300008: rastrillo
-    3300000: cajaPowerUp
-    3300002: cubo
-    3300004: pala
-    3300006: pelota
-    3300008: rastrillo
-    4300000: rastrillo
-    4300002: pala
-    4300004: cajaPowerUp
-    4300006: cubo
-    4300008: pelota
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: cubo
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -67,7 +45,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
