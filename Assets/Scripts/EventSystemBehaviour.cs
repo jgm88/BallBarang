@@ -52,7 +52,7 @@ public class EventSystemBehaviour : MonoBehaviour {
 		}
 	}
 	public void showCursor(bool show){
-		Screen.showCursor = show;
+		Screen.showCursor = false;
 		Screen.lockCursor = !show;
 		changeCursor.enabled = show;
 	}

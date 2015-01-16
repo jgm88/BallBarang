@@ -10,6 +10,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		vHearts = GameObject.Find("Hearts").GetComponentsInChildren<Transform>();
+
 	}
 
 	public void deductLife(int damage){
