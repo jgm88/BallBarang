@@ -9,7 +9,8 @@ public class ShipeBallBeachBehaviour : MonoBehaviour
 
 	private float lerp = 0.0f;
 	private float lastLerp = -0.01f;
-	//private var action = waitingUp;
+	private int numAction = 0;
+
 	void Start () 
 	{
 		transform.localPosition = posStart;
@@ -19,15 +20,15 @@ public class ShipeBallBeachBehaviour : MonoBehaviour
 	void Update () 
 	{
 		lerp = Mathf.PingPong(Time.time, duration) / duration;
-		waitingUp();
-		//lastLerp = lerp;
+		action (numAction);
+		lastLerp = lerp;
 	}
 
 	void waitingUp()
 	{
 		if(lastLerp > lerp)
 		{
-			waitingDown();
+			numAction = 1;
 		}
 	}
 	
@@ -35,7 +36,7 @@ public class ShipeBallBeachBehaviour : MonoBehaviour
 	{
 		if(lastLerp < lerp)
 		{
-			movingUp();
+			numAction = 2;
 		}
 	}
 	
@@ -43,8 +44,8 @@ public class ShipeBallBeachBehaviour : MonoBehaviour
 	{
 		if(lastLerp > lerp)
 		{
-			waitingDown2();
-			//return;
+			numAction = 3;
+			return;
 		}
 		
 		transform.localPosition = Vector3.Lerp(posStart, posEnd, lerp);
@@ -54,7 +55,7 @@ public class ShipeBallBeachBehaviour : MonoBehaviour
 	{
 		if(lastLerp < lerp)
 		{
-			waitingUp2();
+			numAction = 4;
 		}
 	}
 	
@@ -62,7 +63,7 @@ public class ShipeBallBeachBehaviour : MonoBehaviour
 	{
 		if(lastLerp > lerp)
 		{
-			movingDown();
+			numAction = 5;
 		}
 	}
 	
@@ -70,10 +71,36 @@ public class ShipeBallBeachBehaviour : MonoBehaviour
 	{
 		if(lastLerp < lerp)
 		{
-			waitingUp();
-			//return;
+			numAction = 0;
+			return;
 		}
 		
 		transform.localPosition = Vector3.Lerp(posStart,posEnd,lerp);
+	}
+	void action (int status)
+	{
+		/*
+		waitingUp()		-> 0
+		waitingDown()	-> 1
+		movingUp()		-> 2
+		waitingDown2()	-> 3
+		waitingUp2()	-> 4
+		movingDown()	-> 5
+		 */
+		switch(status)
+		{
+			case 0:	waitingUp();
+				break;
+			case 1:	waitingDown();
+				break;
+			case 2:	movingUp();
+				break;
+			case 3:	waitingDown2();
+				break;
+			case 4:	waitingUp2();
+				break;
+			case 5:	movingDown();
+				break;
+		}
 	}
 }
