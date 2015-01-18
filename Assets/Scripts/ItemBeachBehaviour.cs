@@ -11,7 +11,7 @@ public class ItemBeachBehaviour : MonoBehaviour
 		if(other.tag == "Player")
 		{
 			audio.Play();
-			Destroy(this.gameObject, 0.4f);
+			Destroy(this.gameObject, 0.5f);
 		}
 	}
 }

@@ -61,10 +61,5 @@ public class RakeBehaviour : MonoBehaviour
 				//maxTop = false;
 			}
 		}
-
-		if(other.tag == "wood")
-		{
-			maxTop = false;
-		}
 	}
 }
