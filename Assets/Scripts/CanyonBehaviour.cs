@@ -27,7 +27,7 @@ public class CanyonBehaviour : MonoBehaviour {
 		if(colision.transform.tag == "Player" && !used){
 
 			player.SetActive(false);
-			player.transform.position = transform.position + Vector3.forward * 4;
+			player.transform.position = transform.position + transform.forward * 4;
 			StartCoroutine(CanyonLaunch());
 		}
 
@@ -38,7 +38,7 @@ public class CanyonBehaviour : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(2f);
 		player.SetActive(true);
-		player.rigidbody.AddExplosionForce(canyonForce,Vector3.forward,0f);
+		player.rigidbody.AddForce(transform.TransformDirection(Vector3.up) * canyonForce);
 		used = true;
 	}
 
