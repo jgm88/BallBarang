@@ -53,7 +53,7 @@ public class ItemsBallBeach : MonoBehaviour {
 		this.gameObject.transform.position = init;
 	}
 	void OnGUI()
-	{	
+	{
 		string text = "Inventory: \n\n";
 
 		if(wood){ text += "Wood\n"; }
