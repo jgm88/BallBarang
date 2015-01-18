@@ -7,7 +7,7 @@ public class CubeLauncherBehaviour : MonoBehaviour
 	public Transform showelEnd;
 	public float force = 500f;
 	public float delay = 2f;
-	GameObject showel;
+	private GameObject showel;
 	
 	// Use this for initialization
 	void Start () 
