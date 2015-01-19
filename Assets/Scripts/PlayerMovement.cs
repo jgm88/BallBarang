@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour {
 
 			if (Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0){
 				realDirection = anchorCamera.TransformDirection (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
-				rigidbody.AddForce(realDirection * acceleration);
+				rigidbody.AddForce(realDirection * acceleration * Time.deltaTime);
 			}				
 		}
 		else{
