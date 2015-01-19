@@ -34,9 +34,12 @@ public class CanyonBehaviour : MonoBehaviour {
 
 	IEnumerator CanyonLaunch()
 	{
+		player.rigidbody.isKinematic = true;
 		yield return new WaitForSeconds(2f);
 		player.SetActive(true);
+		player.rigidbody.isKinematic = false;
 		player.rigidbody.AddForce(transform.TransformDirection(Vector3.up) * canyonForce);
+		//player.rigidbody.isKinematic = false;
 		//used = true;
 	}
 

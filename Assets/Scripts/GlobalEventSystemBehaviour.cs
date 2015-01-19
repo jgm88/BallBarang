@@ -6,6 +6,7 @@ public class GlobalEventSystemBehaviour : MonoBehaviour {
 
 	private GameObject escPanel;
 	private ChangeCursor changeCursor;
+	public bool initCursor = false;
 	// Use this for initialization
 	void Start () {
 
@@ -13,7 +14,8 @@ public class GlobalEventSystemBehaviour : MonoBehaviour {
 		escPanel.SetActive(false);
 
 		changeCursor = gameObject.GetComponent<ChangeCursor>();
-		showCursor(false);
+
+		showCursor (initCursor);
 	}
 	
 	void Update () {
