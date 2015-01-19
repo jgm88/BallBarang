@@ -3,9 +3,14 @@ using System.Collections;
 
 public class FriendWinBehaviour : MonoBehaviour 
 {
+	private GameObject winPanel;
+
 	bool isInGround = false;
 	// Use this for initialization
-	void Start () {}
+	void Start () 
+	{
+		winPanel = GameObject.Find("WinPanel");
+	}
 	// Update is called once per frame
 	void Update () 
 	{
@@ -22,7 +27,7 @@ public class FriendWinBehaviour : MonoBehaviour
 
 		if(other.tag == "Player")
 		{
-			//You WIN
+			winPanel.SetActive(false);
 		}
 	}
 }
