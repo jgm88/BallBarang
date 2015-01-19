@@ -23,7 +23,14 @@ public class ShipeBallBeachBehaviour : MonoBehaviour
 		action (numAction);
 		lastLerp = lerp;
 	}
-
+	void OnTriggerEnter(Collider other)
+	{
+		other.transform.SetParent(this.transform);
+	}
+	void OnTriggerExit(Collider Other)
+	{
+		Other.transform.SetParent(null);
+	}
 	void waitingUp()
 	{
 		if(lastLerp > lerp)
