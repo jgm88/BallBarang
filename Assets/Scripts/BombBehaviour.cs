@@ -11,11 +11,22 @@ public class BombBehaviour : MonoBehaviour {
 
 
 	private GameObject bomb;
+	private GameObject gameOver;
+	private GameObject gameWin;
 	private RectTransform maskSize;
 	private Rect internalRect;
 	private float MaxWidth;
 	private float maxAnchor;
 	private Vector2 anchorPosition;
+
+
+
+	void Awake()
+	{
+		gameOver = GameObject.Find ("GameOver");
+		gameOver.SetActive (false);
+	}
+
 	// Use this for initialization
 	void Start () {
 
@@ -101,6 +112,6 @@ public class BombBehaviour : MonoBehaviour {
 
 	void OnDestroy()
 	{
-
+		
 	}
 }
