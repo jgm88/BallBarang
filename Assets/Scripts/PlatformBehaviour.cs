@@ -26,4 +26,17 @@ public class PlatformBehaviour : MonoBehaviour {
 		transform.position = Vector3.Lerp(transform.position,tempPos,Time.deltaTime * platformSpeed);
 
 	}
+
+	void OnTriggerEnter(Collider colision)
+	{
+		if(colision.transform.tag == "Player")
+			colision.transform.SetParent (transform);
+	}
+
+	void OnTriggerExit(Collider colision)
+	{
+		if (colision.transform.tag == "Player")
+			colision.transform.SetParent (null);
+	}
+
 }

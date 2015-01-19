@@ -11,6 +11,6 @@ public class PeleleBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(0f,rotate,0f);
+		transform.Rotate(0f,rotate,0f, Space.Self);
 	}
 }
