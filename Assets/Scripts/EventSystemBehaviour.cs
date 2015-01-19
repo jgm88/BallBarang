@@ -16,6 +16,8 @@ public class EventSystemBehaviour : MonoBehaviour {
 
 		playerBehaviour = GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>();
 		button1 = GameObject.Find("InfoButton1").GetComponent<Button>();
+		if(button1.IsActive())
+			button1.Select();
 
 		gameOverPanel = GameObject.Find("GameOverPanel");
 		gameOverPanel.SetActive(false);

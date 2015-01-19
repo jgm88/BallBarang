@@ -48,7 +48,6 @@ public class PlayerMovement : MonoBehaviour {
 		//Obtenemos la camara
 		anchorCamera = GameObject.Find ("AnchorCamera").transform;		
 		anchorBehaviour = anchorCamera.GetComponent<AnchorBehaviour>();	
-
 	}
 	
 	// Update is called once per frame
@@ -56,8 +55,11 @@ public class PlayerMovement : MonoBehaviour {
 
 		if(!isClimbing){
 
-			if ((Input.GetKeyDown (KeyCode.Space) || Input.GetAxis ("Jump") > 0.1f) && isGrounded)  
-					rigidbody.AddForce (0, jumpForce, 0);
+			if ((Input.GetKeyDown (KeyCode.Space) || Input.GetAxis ("Jump") > 0.1f) && isGrounded) { 
+
+				rigidbody.AddForce (0, jumpForce, 0);
+
+			}
 
 			if (Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0){
 				realDirection = anchorCamera.TransformDirection (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
@@ -68,7 +70,7 @@ public class PlayerMovement : MonoBehaviour {
 			//Escalando nos movemos tambien en Y
 			if (Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0){
 				realDirection = anchorCamera.TransformDirection (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"), Input.GetAxis ("Vertical"));
-				rigidbody.AddForce(realDirection * acceleration);
+				rigidbody.AddForce(realDirection * acceleration * Time.deltaTime);
 			}	
 		}
 	}
