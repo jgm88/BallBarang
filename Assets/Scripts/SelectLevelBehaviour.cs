@@ -12,4 +12,9 @@ public class SelectLevelBehaviour : MonoBehaviour {
 	{
 		Application.LoadLevel(levelName);
 	}
+
+	public void exitGame()
+	{
+		Application.Quit ();
+	}
 }
