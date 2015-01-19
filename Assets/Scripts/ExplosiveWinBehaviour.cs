@@ -10,6 +10,8 @@ public class ExplosiveWinBehaviour : MonoBehaviour {
 	{
 		gameWin = GameObject.Find ("GameWin");
 		gameWin.SetActive (false);
+
+		GameObject.Find ("GameOver").SetActive (false);
 	}
 
 	// Update is called once per frame
@@ -20,10 +22,13 @@ public class ExplosiveWinBehaviour : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col)
 	{
-		col.GetComponent<PlayerMovement> ().acceleration = 0;
-		col.GetComponent<PlayerMovement> ().rigidbody.isKinematic = true;
-		GameObject.Find ("EventSystem").GetComponent<GlobalEventSystemBehaviour> ().showCursor (true);
-		gameWin.SetActive (true);
+		if (col.CompareTag ("Player")) {
+				
+			col.GetComponent<PlayerMovement> ().acceleration = 0;
+			col.GetComponent<PlayerMovement> ().rigidbody.isKinematic = true;
+			GameObject.Find ("EventSystem").GetComponent<GlobalEventSystemBehaviour> ().showCursor (true);
+			gameWin.SetActive (true);
+		}
 		 	
 	}
 
