@@ -12,7 +12,7 @@ public class GlobalEventSystemBehaviour : MonoBehaviour {
 
 		escPanel = GameObject.Find("EscPanel");
 		escPanel.SetActive(false);
-
+		
 		changeCursor = gameObject.GetComponent<ChangeCursor>();
 
 		showCursor (initCursor);
