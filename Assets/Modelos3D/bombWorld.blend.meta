@@ -12,15 +12,6 @@ ModelImporter:
     100012: entrada
     100014: mina
     100016: padrera
-    100018: mina_001
-    100020: mina_002
-    100022: mina_003
-    100024: mina_004
-    100026: mina_005
-    100028: mina_006
-    100030: mina_007
-    100032: mina_008
-    100034: mina_009
     400000: //RootNode
     400002: Plane
     400004: Plane_001
@@ -30,15 +21,6 @@ ModelImporter:
     400012: entrada
     400014: mina
     400016: padrera
-    400018: mina_001
-    400020: mina_002
-    400022: mina_003
-    400024: mina_004
-    400026: mina_005
-    400028: mina_006
-    400030: mina_007
-    400032: mina_008
-    400034: mina_009
     2300000: //RootNode
     2300002: Plane
     2300004: Plane_001
@@ -48,15 +30,6 @@ ModelImporter:
     2300012: entrada
     2300014: mina
     2300016: padrera
-    2300018: mina_001
-    2300020: mina_002
-    2300022: mina_003
-    2300024: mina_004
-    2300026: mina_005
-    2300028: mina_006
-    2300030: mina_007
-    2300032: mina_008
-    2300034: mina_009
     3300000: //RootNode
     3300002: Plane
     3300004: Plane_001
@@ -66,15 +39,6 @@ ModelImporter:
     3300012: entrada
     3300014: mina
     3300016: padrera
-    3300018: mina_001
-    3300020: mina_002
-    3300022: mina_003
-    3300024: mina_004
-    3300026: mina_005
-    3300028: mina_006
-    3300030: mina_007
-    3300032: mina_008
-    3300034: mina_009
     4300000: Plane
     4300002: Plane_001
     4300004: Cube
@@ -83,15 +47,6 @@ ModelImporter:
     4300010: Cylinder
     4300012: mina
     4300014: padrera
-    4300016: mina_001
-    4300018: mina_005
-    4300020: mina_004
-    4300022: mina_003
-    4300024: mina_002
-    4300026: mina_009
-    4300028: mina_008
-    4300030: mina_007
-    4300032: mina_006
     7400000: Default Take
     9500000: //RootNode
   materials:
