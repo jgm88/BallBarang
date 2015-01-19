@@ -35,7 +35,7 @@ public class PlatformBehaviour : MonoBehaviour {
 
 	void OnTriggerExit(Collider colision)
 	{
-		if (colision.transform.tag == "Player")
+		if (colision.transform.tag ==	 "Player")
 			colision.transform.SetParent (null);
 	}
 
