@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: e0fc2f6693d4d84489b5f2f2473d09dd
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - explosionAnim: {fileID: 149144, guid: d13f6422869721248aa59fcdf8d2f763, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
