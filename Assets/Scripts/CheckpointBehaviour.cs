@@ -13,12 +13,13 @@ public class CheckpointBehaviour : MonoBehaviour {
 	{
 		if (colision.gameObject.tag == "Player" && !isTeleport) {
 			colision.gameObject.GetComponent<SpawnBehaviour> ().respawn = transform.position; 
-		}else if(colision.gameObject.tag == "Player" && isTeleport)
-			colision.transform.position = colision.gameObject.GetComponent<SpawnBehaviour> ().respawn;
+		} else if (colision.gameObject.tag == "Player" && isTeleport) {
+				colision.rigidbody.isKinematic = true;
+				colision.transform.position = colision.gameObject.GetComponent<SpawnBehaviour> ().respawn;
+				colision.rigidbody.isKinematic = false;
+		}
 
 		Destroy (gameObject);
-
-
 	}
 	
 
