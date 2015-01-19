@@ -98,4 +98,9 @@ public class BombBehaviour : MonoBehaviour {
 		
 		}
 	}
+
+	void OnDestroy()
+	{
+
+	}
 }
