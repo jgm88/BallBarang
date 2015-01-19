@@ -17,10 +17,7 @@ public class LaserBehaviour : MonoBehaviour {
 		StartCoroutine(Parpadeo());
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 
 	IEnumerator Parpadeo()
 	{

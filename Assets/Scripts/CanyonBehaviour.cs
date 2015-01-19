@@ -5,14 +5,12 @@ public class CanyonBehaviour : MonoBehaviour {
 	
 	private GameObject player;
 	public float canyonForce;
-	private bool used;
 
 
 	// Use this for initialization
 	void Start () {
 	
 		player = GameObject.FindGameObjectWithTag("Player");
-		used = false;
 	}
 	
 
@@ -24,10 +22,10 @@ public class CanyonBehaviour : MonoBehaviour {
 	void OnCollisionEnter(Collision colision)
 	{
 
-		if(colision.transform.tag == "Player" && !used){
+		if(colision.transform.tag == "Player"){
 
 			player.SetActive(false);
-			player.transform.position = transform.position + transform.forward * 4;
+			player.transform.position = transform.position + transform.up * 4;
 			StartCoroutine(CanyonLaunch());
 		}
 
@@ -39,7 +37,7 @@ public class CanyonBehaviour : MonoBehaviour {
 		yield return new WaitForSeconds(2f);
 		player.SetActive(true);
 		player.rigidbody.AddForce(transform.TransformDirection(Vector3.up) * canyonForce);
-		used = true;
+		//used = true;
 	}
 
 }

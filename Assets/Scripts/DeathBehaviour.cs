@@ -4,7 +4,6 @@ using System.Collections;
 public class DeathBehaviour : MonoBehaviour {
 
 	private GameObject player;
-	public Vector3 respawnPosition;
 
 	// Use this for initialization
 	void Start () {
@@ -12,10 +11,7 @@ public class DeathBehaviour : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 
 
 	void OnCollisionEnter(Collision colision)
@@ -37,7 +33,7 @@ public class DeathBehaviour : MonoBehaviour {
 			yield return new WaitForEndOfFrame();
 		}
 
-		player.transform.position = respawnPosition;
+		player.transform.position = player.GetComponent<SpawnBehaviour> ().respawn;
 		player.rigidbody.isKinematic=false;
 
 	}
