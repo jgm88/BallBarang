@@ -60,6 +60,10 @@ public class ItemsBallBeach : MonoBehaviour {
 		if(towel){ text += "Tela\n"; }
 		if(rope){ text += "Cuerda\n"; }
 		//text = test ();
+		if(wood && towel && rope)
+		{
+			text = "¡Balsa Creada!";
+		}
 		GUI.Box(new Rect(10,10,100,90), text);
 	}
 	/*
