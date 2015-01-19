@@ -22,9 +22,8 @@ public class BombBehaviour : MonoBehaviour {
 
 
 	void Awake()
-	{
+	{				
 		gameOver = GameObject.Find ("GameOver");
-		gameOver.SetActive (false);
 	}
 
 	// Use this for initialization

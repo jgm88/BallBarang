@@ -17,7 +17,7 @@ public class DeathBehaviour : MonoBehaviour {
 	void OnCollisionEnter(Collision colision)
 	{
 		
-		if(colision.transform.tag == "Player" || colision.gameObject.GetComponentInChildren<Transform>().tag == "Player"){
+		if(colision.transform.tag == "Player"){
 			player.rigidbody.isKinematic=true;
 			player.particleSystem.Play();
 			StartCoroutine(Respawn());
