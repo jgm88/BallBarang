@@ -54,11 +54,11 @@ public class ItemsBallBeach : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		string text = "Inventory: \n\n";
+		string text = "Inventario: \n\n";
 
-		if(wood){ text += "Wood\n"; }
-		if(towel){ text += "Towel\n"; }
-		if(rope){ text += "Rope\n"; }
+		if(wood){ text += "Madera\n"; }
+		if(towel){ text += "Tela\n"; }
+		if(rope){ text += "Cuerda\n"; }
 		//text = test ();
 		GUI.Box(new Rect(10,10,100,90), text);
 	}
