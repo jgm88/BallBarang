@@ -7,6 +7,7 @@ public class ItemsBallBeach : MonoBehaviour {
 	public bool wood = false;
 	public bool towel = false;
 	public bool rope = false;
+	private bool create = true;
 
 	//balsa
 	public GameObject shipPrefab;
@@ -15,9 +16,7 @@ public class ItemsBallBeach : MonoBehaviour {
 
 	//para cuando mueres
 	private Vector3 init = new Vector3(-9.5f,3.5f,11.5f);
-
-
-
+	
 	void Start () {}
 	void Update () 
 	{
@@ -31,6 +30,7 @@ public class ItemsBallBeach : MonoBehaviour {
 			wood = towel = rope = false;
 			ship = Instantiate(shipPrefab, initShipPos, Quaternion.identity) as GameObject;
 			ship.transform.Rotate(0f,110f,90f);
+			create = false;
 		}
 	}
 	void OnTriggerEnter(Collider other)
@@ -54,8 +54,15 @@ public class ItemsBallBeach : MonoBehaviour {
 	}
 	void OnGUI()
 	{
-		string text = "Inventario: \n\n";
-
+		string text = "";
+		if(create)
+		{
+			text = "Inventario: \n\n";
+		}
+		else
+		{
+			text = "¡Balsa Creada!";
+		}
 		if(wood){ text += "Madera\n"; }
 		if(towel){ text += "Tela\n"; }
 		if(rope){ text += "Cuerda\n"; }

@@ -7,9 +7,10 @@ public class FriendWinBehaviour : MonoBehaviour
 
 	bool isInGround = false;
 	// Use this for initialization
-	void Start () 
+	void Awake () 
 	{
 		winPanel = GameObject.Find("WinPanel");
+		winPanel.SetActive(false);
 	}
 	// Update is called once per frame
 	void Update () 
@@ -27,7 +28,8 @@ public class FriendWinBehaviour : MonoBehaviour
 
 		if(other.tag == "Player")
 		{
-			winPanel.SetActive(false);
+			GameObject.Find("EventSystem").GetComponent<GlobalEventSystemBehaviour>().showCursor(true);
+			winPanel.SetActive(true);
 		}
 	}
 }
