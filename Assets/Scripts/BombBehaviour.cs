@@ -112,6 +112,7 @@ public class BombBehaviour : MonoBehaviour {
 
 	void OnDestroy()
 	{
-		
+		gameOver.SetActive (true);
+		GameObject.Find ("EventSystem").GetComponent<GlobalEventSystemBehaviour> ().showCursor (true);
 	}
 }
